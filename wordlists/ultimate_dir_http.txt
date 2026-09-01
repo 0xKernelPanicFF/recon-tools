@@ -386,8 +386,6 @@ Dockerfile
 .ssh/id_ed25519
 .ssh/authorized_keys
 .ssh/known_hosts
-
-# === [13] БЭКАПЫ, ЛОГИ, СТАРЫЕ ВЕРСИИ ===
 backup
 backup.sql
 backup.zip
@@ -424,9 +422,6 @@ app.log
 logs/error.log
 logs/access.log
 logs/debug.log
-
-# === [14] ИНФРАСТРУКТУРА И СЕРВЕРЫ (включая балансировщики, Kubernetes, Consul, Vault) ===
-# Общие
 server-status
 server-info
 asax
@@ -441,7 +436,6 @@ sitemap.txt
 elmah.axd
 trace.axd
 rails/info/properties
-# Мониторинг и панели
 kibana
 jmx-console
 web-console
@@ -459,7 +453,6 @@ prometheus
 metrics/prometheus
 well-known/security.txt
 security.txt
-# Балансировщики (Traefik, HAProxy, Nginx)
 dashboard
 dashboard/
 haproxy?stats
@@ -467,12 +460,10 @@ haproxy_stats
 metrics
 nginx_status
 status
-# MinIO (S3)
 minio
 minio/health
 minio/api/v1
 minio/webrpc
-# Kubernetes API (если открыты наружу)
 api/v1/namespaces
 apis/apps/v1/deployments
 apis/apps/v1/deployments
@@ -481,22 +472,17 @@ api/v1/pods
 api/v1/services
 api/v1/nodes
 error503/
-# Consul / Vault
 v1/sys/health
 v1/secret
 ui/
 v1/auth/token/create
 v1/sys/mounts
-
-# === [15] АУТЕНТИФИКАЦИЯ И SSO (Keycloak, OAuth, SAML) ===
-# Keycloak
 auth/realms/master
 auth/admin/master/console/
 realms/master/.well-known/openid-configuration
 auth/realms/master/protocol/openid-connect/certs
 auth/realms/master/protocol/openid-connect/token
 auth/realms/master/protocol/openid-connect/auth
-# Другие SSO
 oauth/token
 oauth/authorize
 cas/login
@@ -504,8 +490,6 @@ identity/
 saml/metadata
 sso
 sso/login
-
-# === [16] CMS и КОРПОРАТИВНЫЕ ПОРТАЛЫ (русские и мировые) ===
 admin
 administrator
 wp-admin
@@ -557,90 +541,65 @@ dev
 staging
 prod
 prod-api
-# Российские ERP/CRM
 elma
 bitrix24
 megaplan
 1c/
 hs/
 odata/standard.ods
-
-# === [17] AI/ML, НЕЙРОСЕТИ, BIG DATA (LLM, MLflow, Vector DB) ===
-# Ollama и локальные модели
 ollama
 v1/chat/completions
 v1/models
 v1/embeddings
 api/tags
 api/version
-# MLflow
 mlflow
 api/2.0/mlflow/experiments/list
-# ClearML, Kubeflow, Rancher
 clearml
 rancher
 kubeflow
-# Векторные БД (Qdrant, Milvus, Chroma)
 qdrant
 v1/collections
 milvus
 chroma/api/v1
-# Разметка данных
 labelstudio
 cvat
-# Jupyter, Kserve, Seldon
 jupyter
 jupyter/hub
 kserve
 seldon
-# Новые AI платформы (Flowise, Langflow, Open-WebUI)
 open-webui
 api/v1/chats
 flowise
 api/v1/canvas
 langflow
 api/v1/predict
-
-# === [18] ВКС, МЕССЕНДЖЕРЫ, ТЕЛЕФОНИЯ (российские) ===
-# ВКС (TrueConf, Vinteo, IVA, Ktalk)
 api/v1/call
 trueconf
 iva
 v1/meetings
 ktalk
-# Корпоративные мессенджеры (Mattermost, Rocket.Chat, Пачка)
 api/v4/users
 api/v1/channels.list
 mattermost
 rocket.chat
 pachka
-# IP-Телефония (Asterisk, FreePBX)
 admin/config.php
 recordings
 asterisk
-# WebRTC
 webrtc
 rtc
-
-# === [19] API-ШЛЮЗЫ, МЕШИ (Kong, Tyk, APISIX) ===
 admin
 api
 apisix/admin
 tyk/admin
 tyk/health
-
-# === [20] ДОПОЛНИТЕЛЬНЫЕ ПОПУЛЯРНЫЕ СИСТЕМЫ ===
-# Graylog, Splunk
 graylog
 graylog/api
 splunk
 splunk/en-US/account/login
-# JupyterHub, RStudio
 jupyter/hub
 rstudio
-# Minio (S3-совместимое хранилище) уже добавлено
-# Portainer, Rancher
 portainer
 portainer/#!/auth
 rancher/dashboard
-# Sonatype Nexus, JFrog Artifactory уже добавлены выше
