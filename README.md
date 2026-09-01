@@ -45,6 +45,9 @@
 3. Скачивание словарей:
    git clone https://github.com/danielmiessler/SecLists.git ~/SecLists
    curl -o ~/SecLists/Discovery/DNS/subdomains_deep.txt \
+     https://raw.githubusercontent.com/assetnote/commonspeak2-wordlists/master/subdomains/subdomains.txt
+   curl -o ~/resolvers/resolvers.txt \
+     https://raw.githubusercontent.com/projectdiscovery/public-resolvers/master/resolvers.txt
 
 ---
 
@@ -126,7 +129,3 @@ MIT. Вы можете свободно использовать, модифиц
 ## Вклад и обратная связь
 
 Предложения и замечания приветствуются через Issues и Pull Requests.
-   
-     https://raw.githubusercontent.com/assetnote/commonspeak2-wordlists/master/subdomains/subdomains.txt
-   curl -o ~/resolvers/resolvers.txt \
-     https://raw.githubusercontent.com/projectdiscovery/public-resolvers/master/resolvers.txt
