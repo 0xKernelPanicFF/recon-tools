@@ -1,4 +1,3 @@
-# === [1] SWAGGER, OPENAPI & JSON ДОКУМЕНТАЦИЯ ===
 swagger.json
 swagger-ui.html
 swagger-ui/index.html
@@ -30,8 +29,6 @@ api/openapi.yaml
 well-known/jwks.json
 api/v3/swagger.json
 v3/api-docs/swagger-config
-
-# === [2] GRAPHQL (включая Federation/Apollo) ===
 graphql
 graphiql
 graphql/console
@@ -57,8 +54,6 @@ api/trpc
 trpc
 api/v1/trpc
 graphql/explorer
-
-# === [3] GRPC & PROTOBUF (микросервисы) ===
 grpc.health.v1.Health/Check
 grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo
 grpc.health.v1.Health/Watch
@@ -67,8 +62,6 @@ grpc.channelz.v1.Channelz/GetServers
 grpc.channelz.v1.Channelz/GetSocket
 grpc.health.v1.Health/Check?format=json
 grpc.reflection.v1alpha.ServerReflection/ServerReflectionInfo?format=json
-
-# === [4] WEBSOCKETS (Real-time, чаты, уведомления) ===
 ws
 ws-graphql
 realtime
@@ -84,8 +77,6 @@ ws/chat
 ws/notifications
 ws/graphql
 ws/realtime
-
-# === [5] ОЧЕРЕДИ И БРОКЕРЫ (RabbitMQ, Kafka, ActiveMQ, Artemis) ===
 rabbitmq
 rabbitmq/api
 rabbitmq/management
@@ -106,8 +97,6 @@ topic
 activemq/queue
 rabbitmq/#/connections
 kafka/partitions
-
-# === [6] БАЗЫ ДАННЫХ И ХРАНИЛИЩА (Elasticsearch, MongoDB, CouchDB, Redis, Memcached) ===
 elasticsearch
 elasticsearch/_cat/indices
 elasticsearch/_search
@@ -132,8 +121,6 @@ clickhouse/query
 weaviate
 v1/schema
 v1/objects
-
-# === [7] ОБЛАЧНЫЕ МЕТАДАННЫЕ (Yandex, VK, Sber, AWS, GCP, Azure) ===
 computeMetadata/v1
 computeMetadata/v1/instance
 computeMetadata/v1/project
@@ -148,9 +135,6 @@ azuremetadata/v1
 latest/meta-data/iam/security-credentials
 metadata/iam/security-credentials
 metadata/compute/v1/instance/service-accounts/default/token
-
-# === [8] CI/CD, МОНИТОРИНГ, DEVOPS (включая российские аналоги) ===
-# Дженкинс, TeamCity, SonarQube, Grafana, Prometheus, Alertmanager
 jenkins
 jenkins/login
 jenkins/script
@@ -170,11 +154,9 @@ prometheus/api/v1/query
 prometheus/api/v1/targets
 alertmanager
 alertmanager/#/alerts
-# Российские аналоги Jira/Confluence (Яндекс Трекер, Kaiten, Weeek)
 api/v2/tracker
 kaiten
 weeek
-# Системы управления кодом (Gitea, Gogs, Nexus)
 gitea
 gitea/api/v1/user
 gogs
@@ -186,22 +168,17 @@ artifactory
 artifactory/webapp
 chartmuseum
 chartmuseum/health
-# GitLab (ещё используется)
 gitlab
 gitlab/explore
 azure-devops
 jira
 confluence
-# Редмайн, YouTrack
 redmine
 youtrack
-# Российские DevOps платформы
 gitverse
 sphere
 v1/agent/ready
 v1/agent/metrics
-
-# === [9] JAVA / SPRING BOOT (Финтех, банки, корпоративные) ===
 actuator
 actuator/env
 actuator/mappings
@@ -254,9 +231,6 @@ api/actuator/env
 api/actuator/heapdump
 v1/configprops
 v1/env
-
-# === [10] PHP / LARAVEL / SYMFONY (включая 1С-Битрикс, Yii2) ===
-# Laravel, Symfony, Bitrix, Yii2
 _profiler/phpinfo
 _profiler/html
 _profiler/purge
@@ -274,7 +248,6 @@ horizon/api
 nova-api
 nova-api/*/search
 vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
-# Битрикс глубоко
 bitrix
 bitrix/admin
 bitrix/tools
@@ -284,23 +257,19 @@ bitrix/php_interface/dbconn.php
 bitrix/.settings.php
 bitrix/modules/main/include/prolog_before.php
 bitrix/tools/upload.php
-# 1С (HTTP-сервисы и OData)
 hs
 hs/
 ws
 ws/
 onlineshop
 odata/standard.ods
-# Tilda
 htaccess.tilda
 Tilda_with_love
-# Yii2
 yii
 yii/debug/default/index
 yii/debug/default/view
 yii/gii
-yii/requirements
-# Другие PHP
+yii/requirement
 phpinfo.php
 info.php
 test.php
@@ -322,12 +291,9 @@ wp-config.php
 xmlrpc.php
 soap
 wsdl
-# Headless CMS (Strapi, Directus)
 api/pages
 api/collections
 admin/auth/login
-
-# === [11] NODE.JS, NEXT.JS, VUE, NUXT, REACT ===
 .next/required-server-files.json
 .next/prerender-manifest.json
 .next/routes-manifest.json
@@ -363,15 +329,12 @@ composer.json
 composer.lock
 baking.json
 parameters.json
-# Next.js API routes
 api/hello
 api/auth
 api/users
 api/data
 api/v1/hello
 api/v2/users
-
-# === [12] СЕКРЕТЫ, КОНФИГИ, DOTFILES ===
 .env
 .env.bak
 .env.old
