@@ -12,10 +12,9 @@
 #  Особенности:       Использует новый синтаксис аргументов (-O plain)
 #                     и встроенный нативный rate-limiter утилиты
 # ============================================================
-# 
-#  Author & Architecture: 0xKernelPanicFF (ZORG)
-#  Development Partner:   AI Assistant (Prompt Engineering)
-#  GitHub:                https://github.com/0xKernelPanicFF
+#  Разработчик:  0xKernelPanicFF (ZORG)
+#  Собрано при участии ИИ (Промпт-инжиниринг и отладка)
+#  GitHub:       https://github.com/0xKernelPanicFF
 # ============================================================
 #
 # Использование:
